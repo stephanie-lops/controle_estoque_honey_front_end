@@ -1,3 +1,48 @@
+------- ENGLISH ---------
+
+# [Client] Honey Store: Parts Inventory
+## Clothing Parts Inventory
+**Author: Stephanie Lopes**
+
+The goal here is to illustrate the user interaction page for input and viewing of clothing inventory.
+
+## How to run
+
+Just download the project and open the index.html file in your browser.
+
+## Usage instructions
+To add a new item:
+```
+1 - Click on Add Item.
+2 - Select Item.
+3 - Select Size.
+4 - Write the quantity in whole numbers.
+5 - Click on Add.
+6 - Click OK.
+7 - If you want to cancel the operation, click on Cancel.
+```
+
+To edit an item:
+```
+1 - Click on Edit in the same line as the item to be edited.
+2 - Edit the Item field (if necessary).
+3 - Edit the Size field (if necessary).
+4 - Edit the Quantity field (if necessary).
+5 - Click Save.
+6 - Click OK.
+7 - If you want to cancel the operation, click Cancel.
+```
+
+To delete an item:
+```
+1 - Click Delete on the same line as the item to be deleted.
+2 - Click OK.
+3 - Click OK.
+```
+
+------- PORTUGUESE ---------
+
+
 # [Client] Honey Store: Parts Inventory
 ## Inventário de Peças de Roupas
 **Autor: Stephanie Lopes**
