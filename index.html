@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Honey Store: Parts Inventory</title>
+</head>
+
+<body>
+     <!-- Header for system information -->
+    <header>
+        <div class="title">
+            <h1>Honey: Parts Inventory</h1> <!-- Main title -->
+        </div>
+    </header>
+
+    <!-- Button to open the modal -->
+    <div class="menuContentBtn">
+        <button type="button" id="createItemBtn" class="btnMenu">Add Item</button> <!-- Button to add a new item -->
+    </div>
+    
+    <!-- NEW ITEM WINDOW -->
+    <div id="itemModal" class="itemModal">
+        <div class="modal-content-create-item">
+            <h2>Item Information</h2> <!-- Modal title -->
+            <form id="itemForm">
+                <div class="form-group">
+                    <label for="newInput">Item:</label> <!-- Label for item selection -->
+                    <select id="newInput" name="newInput" required>
+                        <option value="Button-Detail Shirt">Button-Detail Shirt</option>
+                        <option value="Flared Skirt">Flared Skirt</option>
+                        <option value="Cargo Jeans">Cargo Jeans</option>
+                        <option value="Soft Bra">Soft Bra</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <div class="form-group-select">
+                        <div class="form-group-select-content">
+                            <label for="newSize">Size:</label> <!-- Label for size selection -->
+                            <select id="newSize" name="newSize" required>
+                                <option value="PP">PP</option>
+                                <option value="P">P</option>
+                                <option value="M">M</option>
+                                <option value="G">G</option>
+                                <option value="GG">GG</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="newQuantity">Quantity:</label> <!-- Label for quantity input -->
+                    <input type="text" id="newQuantity" name="newQuantity" required>
+                </div>
+    
+                <div class="form-buttons">
+                    <button type="button" onclick="newItem()" class="addBtn">Add</button> <!-- Button to add the item -->
+                    <button type="button" id="btnModalItemCreateCancel" class="btn-close-modal-item-create-cancel">Cancel</button> <!-- Button to cancel -->
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Table with existing items -->
+    <section class="items">
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Size</th> 
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Actions</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script> <!-- JavaScript file for functionalities -->
+    <div id="itemCardsContainer"></div> <!-- Container for item cards -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
